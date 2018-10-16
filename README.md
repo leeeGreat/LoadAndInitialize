@@ -4,6 +4,7 @@
 +load调用顺序，父类-->子类-->分类（多个的话需要看complie source的顺序），子类没有重写的话，调用父类一次
 
 +initialize 
+父类有initialize重写
 
 子类有分类重写
 父类--->子类分类（complie source中最后一个，不管子类方法有没有重写）
