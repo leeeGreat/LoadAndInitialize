@@ -10,6 +10,8 @@
 load调用时机比较早,当load调用时,其他类可能还没加载完成,运行环境不安全.
 load方法是线程安全的，它使用了锁，我们应该避免线程阻塞在load方法.
 
+一般在+load方法中用 isa-swizzling,替换系统的方法
+
 +initialize 
 父类有initialize重写
 
